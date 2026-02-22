@@ -169,7 +169,7 @@ for item in inventory:
 # 3. Output:
 if exists:
     print("Stock updated for item_id", item_id)
-    print("Item stock updates from", old_stock, "to", new_stock, ".")
+    print("Cold Brew stock updates from", old_stock, "to", new_stock, ".")
 else:
     print("Item not found.")
 
