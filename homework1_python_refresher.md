@@ -40,7 +40,7 @@
 ## Program Requirements
 
 
-### 1) Data Model (In Memory)
+### 1 Data Model (In Memory)
 - Inventory items stored in a list of dictionaries.
 - Each item must include: `id`, `name`, `price`, `stock`.
 - Orders stored in a list of dictionaries.
@@ -65,7 +65,12 @@ Ensure you use a unique string for the `order_id` (e.g., `"Order_101"`).
 
 - **Order 1:** Order iD: `"Order_101"`, Item ID: `2`, Quantity: `2`, Status: `"Placed"`, Total: `8.50`
 - **Order 2:** Order iD: `"Order_102"`, Item ID: `3`, Quantity: `1`, Status: `"Placed"`, Total: `3.75`
-
+``` python
+Orders = [
+    {"orders_id": "Order_101", "items_id":2, "Quantity": 2, "Status": "Placed", "Total": 8.50},
+    {"orders_id": "Order_102", "items_id":3, "Quantity": 1, "Status": "Placed", "Total": 3.75},
+]
+```
 ### 2) Main File Structure (Required)
 - Organize `main.py` into four labeled sections: **Create**, **Read**, **Update**, **Remove/Delete**.
 - Within each section, label queries exactly as `Query 1`, `Query 2`, etc.
@@ -111,17 +116,12 @@ else:
 ```python
 # Query 1: Place a new order for an item and quantity.
 
-
 # 1. Input:
 # ...
 item_id = int(input("Enter the Item ID to order: "))
 quantity = int(input("Enter the quantity: "))
 
-
 # 2. Process: [Name process here, e.g. "Validate and create order"]
-# ...
-
-
 
 
 
